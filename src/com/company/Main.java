@@ -5,16 +5,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 import java.util.Scanner;
-import java.util.stream.Collectors;
+
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
         JSON json = new JSON();
-        JSON.URL = "https://api.opendota.com/api/heroStats";
+        JSON.URL = "https://api.opendota.com/api/heroStats"; //Dota 2 heroes stats
         json.run();
 
         String jsonString = json.jsonIn;
@@ -37,6 +35,6 @@ public class Main {
         String search = scanner.nextLine();
         HeroesDB nameHero = heroesDB.filterByLocalizedName(search);
         System.out.println(nameHero);
-        
+
     }
 }
