@@ -28,7 +28,9 @@ public class Main {
         for(Heroes hero : heroes){
             heroesDB.add(hero);
         }
-        System.out.println(heroesDB);
+        heroesDB.getHeroesArrayList().sort(Heroes.byBaseArmorDesc);
+        System.out.println("Result of sorting by base armor value:\n" + heroesDB);
+
 
         System.out.println("Enter the name of hero;");
         Scanner scanner = new Scanner(System.in);
