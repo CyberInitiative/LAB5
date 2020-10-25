@@ -30,7 +30,12 @@ public class Main {
         }
         heroesDB.getHeroesArrayList().sort(Heroes.byBaseArmorDesc);
         System.out.println("Result of sorting by base armor value:\n" + heroesDB);
-
+        heroesDB.getHeroesArrayList().sort(Heroes.byBaseStrAsc);
+        System.out.println("Result of sorting by base straight value:\n" + heroesDB);
+        heroesDB.getHeroesArrayList().sort(Heroes.byMoveSpeedDesc);
+        System.out.println("Result of sorting by base move speed value:\n" + heroesDB);
+        heroesDB.getHeroesArrayList().sort(Heroes.byBaseAttackMinAsc);
+        System.out.println("Result of sorting by base attack min value:\n" + heroesDB);
 
         System.out.println("Enter the name of hero;");
         Scanner scanner = new Scanner(System.in);
