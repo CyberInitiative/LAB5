@@ -2,10 +2,9 @@ package com.company;
 
 import java.io.*;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-public class JSON extends Thread implements Serializable {
+public class JSON extends Thread {
     public String jsonIn;
     public static String URL;
 
@@ -40,7 +39,6 @@ public class JSON extends Thread implements Serializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return jsonIn;
     }
 
